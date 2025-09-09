@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="survay.png">
+</head>
+<body>
+    <div class="img">
+        <img src="survay.png" alt="image">
+    </div>    
+    <div class="title">
+       <h1 id="heading">Survey Form</h1> 
+    </div>
+    <form id="form">
+        <div id="description">
+            Let us know so that we can improve our services.
+                Thank you!!!
+        </div>
+        <fieldset div class="personal-info">
+            <label for="name">Name : </label>
+            <input id="name-label" name="name" type="text" placeholder="abe"><br><br>
+       
+            <label for="email">Email : </label>
+            <input id="email-label" name="email" type="email" placeholder="abe@mail.com"><br><br>
+        
+            <label for="Age">Age (optional)  : </label>
+            <input id="age-label" name="age" type="number" placeholder="number"><br><br>
+
+            <label for="number">Enter Your Number : </label>
+            <input id="number-label" name="number" type="tel" placeholder="number" min="7" max="10"pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        
+            <!--Dropdown box-->
+
+            <label for="drop-down">Do you like it</label>
+            <select name="drop-down" id="drop-down">
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+                <option value="Poor">Poor</option>
+            </select> 
+            <br><br>
+            <label name="checkbox">Which is favourite subjects from below options??</label><br>
+            <input type="checkbox" name="Maths" id="maths">
+            <label  for="maths">Maths</label><br>
+
+            <input type="checkbox" name="Science" id="science">
+            <label for="science">Science</label><br> 
+
+            <input type="checkbox" name="History" id="history">
+            <label  for="history">History</label><br>
+
+            <input type="checkbox" name="Art" id="art">
+            <label  for="art">Art</label><br>
+
+            <input type="checkbox" name="Geography" id="geography">
+            <label  for="geography">Geography</label><br>
+
+            <input type="checkbox" name="Music" id="music">
+            <label  for="music">Music</label><br>
+
+            <input type="checkbox" name="Sports" id="sports">
+            <label  for="sports">Sports</label><br><br>
+            
+
+            <label  for="thought">Your thought :-</label> <br><br>
+            <textarea id="comments" rows="5" columns="500">
+    Your viwes
+              </textarea><br><br>
+              <!-- submit button -->
+              <input type="submit" id="submit" value="Submit"><br><br>
+              <cite>This is made by Nikita Vinod Katarpawar</cite>
+        </fieldset> 
+    </form>    
+</body>
+</html>
